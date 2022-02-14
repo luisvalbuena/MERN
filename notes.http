@@ -1,0 +1,17 @@
+@host = http://localhost:4000
+@noteid1 = ''
+@noteid2 = ''
+
+### obteniendo usuarios
+GET {{host}}/api/notes
+
+### creando usuario
+POST {{host}}/api/notes
+Content-Type: application/json
+
+{
+    "title": "Task-x",
+    "description": "this is a task",
+    "author": "john",
+    "date": 16-07-2022
+}
